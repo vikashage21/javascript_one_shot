@@ -1,0 +1,3 @@
+// learning scope in js..
+
+
