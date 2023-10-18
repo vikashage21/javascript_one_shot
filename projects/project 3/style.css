@@ -1,0 +1,21 @@
+.container{
+    width: 30vw;
+    height: 10vw;
+text-align: center;
+
+padding: 15px;
+    background-color: orange;
+    border-radius: 25px;
+    
+}
+#clock{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color:  #212121;
+    color: white;
+}

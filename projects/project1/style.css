@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+margin: auto;
+justify-content: center;
+align-items: center;
+
+height: 80vh;
+
+}
+
+.box{
+    width: 90px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+    cursor: pointer;
+}
+.info{
+  
+    width: 250px;
+    margin: 15px;
+}
+.grey{
+    background-color: grey;
+    border: 2px solid black;
+
+}
+.white{
+    background-color: white;
+    border: 2px solid black;
+}
+.blue{
+    background-color: blue;
+    border: 2px solid black;
+
+}
+.yellow{
+    background-color: yellow;
+    border: 2px solid black;
+
+}
+
+

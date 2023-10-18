@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 50vw;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+form input {
+    padding: 5px 45px;
+}
+button{
+    margin: 15px;
+    
+}
+

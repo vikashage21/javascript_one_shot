@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+        div{
+            background-color: rgb(196, 96, 96);
+            max-width: 50px;
+            color: white;
+            text-align: center;
+            margin: auto;
+         
+        }
+        .color{
+           background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        press the key and watch magic 
+    </p>
+    <div id="result">
+
+    </div>
+    <script>
+        const p = document.querySelector('p')
+        const result = document.querySelector('#result')
+        document.addEventListener('keydown',function(e){
+            result.innerHTML=`
+            <table class="color">
+  <tr>
+    <td>key</td>
+    <td>keycode</td>
+    <td>code</td>
+  </tr>
+  <tr>
+    <td>${e.key == " " ? "space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+            `
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const div= document.createElement('div')
+        div.className="main"
+        div.id="main"
+        div.setAttribute('title','main')
+        div.style.backgroundColor="green"
+        div.style.padding="12px";
+        // div.innerText=`chai or code `
+        const textNode=document.createTextNode('chai and code')
+        div.appendChild(textNode)
+        console.log(div)
+        document.body.appendChild(div)
+    </script>
+</body>
+</html>
