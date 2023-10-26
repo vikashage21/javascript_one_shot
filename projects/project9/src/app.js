@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 
 const app = express();
@@ -12,7 +14,6 @@ const pratialPath = path.join(__dirname, "../src/pratials");
 
 const tempPath = path.join(__dirname, "../src/views");
 
-const port = 8000;
 
 app.use(express.static(staticPath));
 
@@ -52,6 +53,6 @@ app.get('*',(req,res)=>{
 res.render('404')
 })
 
-app.listen(port, () => {
-  console.log(`listing on port ${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`listing on port ${process.env.PORT}`);
 });
