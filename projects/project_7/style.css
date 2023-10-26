@@ -1,0 +1,24 @@
+.results{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-width: 50vw;
+    min-height: 70vh;
+    background-color: rgb(190, 190, 246);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25px;
+   
+}
+p{
+    text-align: center;
+}
+
+h6{
+    background-color: white;
+    width: 50%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 25px;
+
+}

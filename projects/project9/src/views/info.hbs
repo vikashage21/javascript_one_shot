@@ -1,0 +1,60 @@
+{{>header}}
+{{>nav}}
+
+<div class="height_fx">
+
+<div id="container">
+
+
+</div>
+
+</div>
+
+
+
+<script>
+    
+
+const url ="https://api.coincap.io/v2/assets"
+
+fetch(url).then((response)=>{
+    return response.json()
+}).then((data)=>{
+
+    const container= document.querySelector('#container')
+const returnData =data.data
+returnData.forEach((item)=>{
+ 
+const html =`
+
+  
+  <div class="card-body cards" >
+    <h5 class="card-title"> ${item.id}</h5>
+    <h6>  ${item.symbol}</h6>
+    <h6> TOTAL-SUPPLY ${item.supply}</h6>
+    <h6> MAX - SUPPLY  ${item.maxSupply}</h6>
+    <h6> MARKET-CAP  ${item.marketcapUsd}</h6>
+    <h6>VALUME IN 24 HR :   ${item.valumeUsd24Hr}</h6>
+    <h6>PRICE :  USDT  ${Math.round(item.priceUsd)}</h6>
+
+    <h6>  CHANGE-PERCENT 24 HR ${item.changePercent24Hr}</h6>
+
+
+
+    <a href="${item.explorer}" class="btn btn-primary">explorer</a>
+  </div>
+`
+const div = document.createElement('div')
+div.innerHTML=html
+
+container.appendChild(div)
+})   
+
+}).catch((error)=>{
+    console.log(error)
+
+})
+
+
+</script>
+{{>footer  }} 

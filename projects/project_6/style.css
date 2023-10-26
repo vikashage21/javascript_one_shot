@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: rgba(0, 0, 255, 0.327);
+}
+.container{display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 50%;
+    min-height: 250px;
+    margin: 80px auto ;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+input{
+    border-radius: 25px;
+   
+  padding: 15px;
+  
+}
+#add{
+    background-color: rgb(206, 106, 12);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+.notesData{
+    padding: 5px 55px;
+    margin: 15px;
+    border-radius: 25px;
+    background-color: rgba(147, 138, 226, 0.333);
+    list-style: none;
+    display: flex;
+    width: 30vw;
+    font-weight: bold;
+    justify-content: space-evenly;
+   
+}
+
+#cancel{
+    background-color: rgba(243, 174, 174, 0.741);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#cancel:hover{
+    background-color: rgba(206, 12, 12, 0.623);
+}
